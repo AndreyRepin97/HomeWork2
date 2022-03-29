@@ -1,19 +1,20 @@
 package ru.skypro;
 
+import java.awt.desktop.SystemSleepListener;
+
 public class Main {
 
     public static void main(String[] args) {
-        //intTypes
-int i = 10000;
-byte b = 127;
-short sh = 2;
-long lng = 10_000_000_000_000_000L;
-//double point types
-float flt = 3.14F;
-double dbl = 3.1415926535;
-//specType
-char chr = 33;
-//System.out.println(chr);
-boolean bln = i>b;
+float firstBoxer = 78.2F;
+float secondBoxer = 82.7F;
+float boxersWeight = secondBoxer + firstBoxer;
+float boxersWeightDifference1 = secondBoxer - firstBoxer;
+float boxersWeightDifference2 = secondBoxer%firstBoxer;
+        System.out.println("Вес боксеров");
+        System.out.println(boxersWeight);
+        System.out.println("Разность веса боксеров");
+        System.out.println(boxersWeightDifference1);
+        System.out.println("Другая разность веса боксеров");
+        System.out.println(boxersWeightDifference2);
     }
 }
